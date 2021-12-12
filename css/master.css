@@ -1,0 +1,167 @@
+body {}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  background: #94C315;
+  box-shadow: 0 5px 3px black;
+  position: absolute;
+  width: 100vw;
+}
+
+nav img {
+  height: 60px;
+  filter: drop-shadow(4px 4px 4px white);
+
+}
+
+nav span {
+  font-size: 35px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  padding: 15px 5px;
+  cursor: pointer;
+}
+
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.items:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #404040;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after {
+  opacity: 1;
+  bottom: 8px;
+}
+
+nav ul li.logo {
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+nav ul li:hover a {
+  color: #3392FF;
+}
+
+nav ul li i {
+  font-size: 23px;
+}
+
+nav ul li.btn {
+  display: none;
+}
+
+nav ul li.btn.hide i:before {
+  content: '\f00d';
+}
+header {
+  background-image: url('../images/header.jpg');
+  background-size: auto 250%;/*THIS ONE NEEDS TO ADJUST for other devices!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  ERROR! ERROR! ERROR! ERROR!*/
+  background-repeat: no-repeat;
+  background-position: left top;
+  animation-name: MovingBackground;
+  height: 70vh;
+  animation-duration: 70s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 100%;
+  box-shadow: 0 5px 3px black;
+
+}
+@keyframes MovingBackground {
+  0% {background-position: left top;}
+  25% {background-position: right top;}
+  50% {background-position: right bottom;}
+  75% {background-position: left bottom;}
+  100% {background-position: left top;}
+}
+@media all and (max-width: 900px) {
+  header {
+    background-image: url('../images/header.jpg');
+    background-size: auto 250%;/*THIS ONE NEEDS TO ADJUST for other devices!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  ERROR! ERROR! ERROR! ERROR!*/
+    background-repeat: no-repeat;
+    background-position: left top;
+    animation-name: MovingBackground;
+    height: 50vh;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 100%;
+    box-shadow: 0 5px 3px black;
+
+  }
+  @keyframes MovingBackground {
+    0% {background-position: left top;}
+    25% {background-position: right top;}
+    50% {background-position: right bottom;}
+    75% {background-position: left bottom;}
+    100% {background-position: left top;}
+  }
+  nav {
+    padding: 5px 30px;
+  }
+
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.items.show {
+    display: block;
+  }
+
+  nav ul li.btn {
+    display: block;
+  }
+
+  nav ul li.items:hover {
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #2292FF,
+      inset 0 0 10px #4492FF;
+  }
+
+  nav ul li.items:hover:after {
+    opacity: 0;
+  }
