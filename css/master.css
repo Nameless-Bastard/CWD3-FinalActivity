@@ -19,6 +19,7 @@ nav {
 nav img {
   height: 60px;
   filter: drop-shadow(4px 4px 4px white);
+  margin-right: 15px;
 
 }
 
@@ -33,6 +34,7 @@ nav ul {
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
+  padding-left: 5px;
 }
 
 nav ul li {
@@ -139,10 +141,20 @@ header {
     75% {background-position: left bottom;}
     100% {background-position: left top;}
   }
-  nav {
-    padding: 5px 30px;
+  nav img {
+    height: 60px;
+    filter: drop-shadow(4px 4px 4px white);
+    margin-left: 20px;
   }
-
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-left: 5px;
+  }
   nav ul li.items {
     width: 100%;
     display: none;
