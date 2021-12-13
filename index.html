@@ -1,42 +1,99 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <title>Zsakers - Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/master.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Zsakers - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
-    <nav>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/master.css">
+</head>
 
+<body>
+  <nav>
+
+    <ul>
+      <li class="logo"><img src="images/home/icon2.png" alt="">Zsakers</li>
+
+      <li class="items"><a href="#">Home</a></li>
+      <li class="items"><a href="#">About</a></li>
+      <li class="items"><a href="#">Menu</a></li>
+      <li class="items"><a href="#">Contact</a></li>
+      <li class="items"><a href="#">Feedback</a></li>
+      <li class="items">
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </li>
+      <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+
+
+  </nav>
+
+  <header>
+    <!-- This is header image without anything inside, aside from background, don't delete this header tag -->
+  </header>
+
+  <br>
+  <img class="centerImg" src="images/home/icon2.png" alt="Zsakers Logo">
+  <br>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container centerText">
+      <h1>Zsakers Phillipines</h1>
+      <p>Zsakers Phillipines offers the best donuts, milktea, frappe and pizza in Novaliches and all over Quezon City.</p>
+      <p>We primarily offer the best of the best!</p>
+      <p>We are now open for franchising, for inquiries please do message us or email us.</p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container-fluid imgHolderS2">
+      <img src="images/home/donut2.jpg" alt="">
+      <h6> Hungry now? Tap <a href="menu.html">Order!</a> Menu</h3>
+    </div>
+    <div class="container-fluid imgHolderS2">
+      <img src="images/home/donut3.jpg" alt="">
+      <h6>Or "Buy now!" button down here.</h3>
+    </div>
+
+  </div>
+  <br>
+  <div class="containA">
+    <a href="menu.html" class="butn">Buy Now!</a>
+    <br><br><br><br>
+  </div>
+
+  <section class="quote">
+    <blockquote class="container">
+      <p>"Your most unhappy customers are your greatest source of learning."</p>
+      <cite>Bill Gates</cite>
+
+    </blockquote>
+  </section>
+
+
+  <footer>
+    <div class="containA">
       <ul>
-        <li class="logo"><img src="images/icon2.png" alt="">Zsakers</li>
-        <li class="items"><a href="#">Home</a></li>
-        <li class="items"><a href="#">About</a></li>
-        <li class="items"><a href="#">Blogs</a></li>
-        <li class="items"><a href="#">Contact</a></li>
-        <li class="items"><a href="#">Feedback</a></li>
-        <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+        <li><a href="#">Home</a> </li>
+        <li><a href="#">About</a> </li>
+        <li><a href="#">Contacts</a> </li>
       </ul>
+      <p>© All rights reserved</p>
+    </div>
+  </footer>
 
 
-    </nav>
-
-    <header>
-
-    </header>
-    <br>
-    <h1>What is Lorem Ipsum?</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <hr>
-    <br>
 
     <script>
       $(document).ready(function() {
@@ -46,6 +103,7 @@
         });
       });
     </script>
-  </body>
+
+</body>
 
 </html>
