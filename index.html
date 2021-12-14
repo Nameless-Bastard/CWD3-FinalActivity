@@ -20,7 +20,7 @@
   <nav>
 
     <ul>
-      <li class="logo"><img src="images/home/icon2.png" alt="">Zsakers</li>
+      <li class="logo"><img src="images/icon2.png" alt="">Zsakers</li>
 
       <li class="items"><a href="#">Home</a></li>
       <li class="items"><a href="#">About</a></li>
@@ -33,9 +33,12 @@
           <button class="btn btn-success" type="submit">Search</button>
         </form>
       </li>
-      <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      <li><div class="containerMenu" onclick="menuFunction(this)">
+  <div class="clickAble-1"></div>
+  <div class="clickAble-2"></div>
+  <div class="clickAble-3"></div>
+</div></li>
     </ul>
-
 
   </nav>
 
@@ -44,7 +47,7 @@
   </header>
 
   <br>
-  <img class="centerImg" src="images/home/icon2.png" alt="Zsakers Logo">
+  <img class="centerImg" src="images/icon2.png" alt="Zsakers Logo">
   <br>
 
   <div class="jumbotron jumbotron-fluid">
@@ -58,11 +61,11 @@
 
   <div class="container-fluid">
     <div class="container-fluid imgHolderS2">
-      <img src="images/home/donut2.jpg" alt="">
+      <img src="images/donut2.jpg" alt="">
       <h6> Hungry now? Tap <a href="menu.html">Order!</a> Menu</h3>
     </div>
     <div class="container-fluid imgHolderS2">
-      <img src="images/home/donut3.jpg" alt="">
+      <img src="images/donut3.jpg" alt="">
       <h6>Or "Buy now!" button down here.</h3>
     </div>
 
@@ -95,14 +98,18 @@
 
 
 
-    <script>
-      $(document).ready(function() {
-        $('.btn').click(function() {
-          $('.items').toggleClass("show");
-          $('ul li').toggleClass("hide");
-        });
+  <script>
+    $(document).ready(function() {
+      $('.containerMenu').click(function() {
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
       });
-    </script>
+    });
+
+    function menuFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
 
 </body>
 
