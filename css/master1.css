@@ -46,6 +46,7 @@
 .franchise {
   background: #92b533;
   color: #ffffff;
+  box-shadow: 0 -5px 4px gray;
 }
 .franchise h3{
   text-align: right;
