@@ -1,0 +1,69 @@
+.contact{
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.msgBtn{
+  background-color: #83B351;
+}
+.bgContact{
+  background-color: #D4FFA6;
+}
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  min-height: 500px;
+  border-top:  5px #232624 solid;
+  border-right: 5px #232624 solid;
+    margin: 0 auto;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+
+}
+.carreerBtn{
+  background-color: #94C315;
+  color: #D4FFA6 ;
+}
+.career{
+  width:75%;
+  padding:20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.career img{
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px gray;
+  margin-top: 20px;
+}
+.franchise {
+  background: #92b533;
+  color: #ffffff;
+}
+.franchise h3{
+  text-align: right;
+}
+.franchise img{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #465e04;
+  margin-top: 40px;
+}
+.py-2{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+
+[class*="col-"]{
+  flex: 100%;
+    max-width: 100%;
+}

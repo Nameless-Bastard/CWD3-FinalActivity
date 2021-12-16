@@ -1,0 +1,218 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Zsakers - Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/bd432ee87d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+
+  <body>
+    <nav>
+
+      <ul>
+        <li class="logo"><img src="images/icon2.png" alt="">Zsakers</li>
+
+        <li class="items"><a href="index.html"><i class='fa fa-home'></i> Home</a></li>
+        <li class="items"><a href="about.html"><i class='fa fa-address-book'></i> About</a></li>
+        <li class="items"><a href="#"><i class='fas fa-bell'></i> Products</a></li>
+        <li class="items"><a href="contact.html"><i class='fas fa-phone'></i> Contact</a></li>
+        <li class="items"><a href="cart.html"><i class="fa fa-cart-arrow-down" style="font-size:18px"></i> Cart</a></li>
+        <li class="items">
+          <form class="form-inline" action="#">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </li>
+        <li><div class="containerMenu" onclick="menuFunction(this)">
+    <div class="clickAble-1"></div>
+    <div class="clickAble-2"></div>
+    <div class="clickAble-3"></div>
+  </div></li>
+      </ul>
+
+    </nav>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="drk"></div>
+          <img src="images/carousel1.jpg" alt="Los Angeles">
+          <div class="carousel-caption">
+            <h3><a href="#bundle">Barkada Bundle</a></h3>
+            <p>Now with "Ultimate Barkada Bundle!"</p>
+            <p>Christmas Promo this coming 12.12!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel2.jpg" alt="food">
+          <div class="carousel-caption">
+            <h3><a href="#bundle">Donuts Overload!</a></h3>
+            <p>We are happy to serve you with our donuts</p>
+            <p>Extra toppings with great taste!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel3.jpg" alt="food">
+          <div class="carousel-caption">
+            <h3><a href="#bundle">Strawberry Glazzy!</a></h3>
+            <p>Feeling tempted now? </p>
+            <p><a href="#bundle">Buy now!</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel4.jpg" alt="food">
+          <div class="carousel-caption">
+            <h3><a href="#bundle">Z Quezo!</a></h3>
+            <p>One of our signature donut, with cheese toppings</p>
+            <p>want more <a href="#">signature donuts</a>?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h1><img src="images/icon2.png" alt="Zsakers Logo" width="100px">Menu</h1>
+    </section>
+
+<hr>
+    <section class="header" id="bundle">
+      <h2>Bundle Delivery</h2>
+      <h4>Special Promo</h4>
+      <form action="cart.html">
+        <div class="row">
+
+          <div class="column">
+            <div>
+              <img src="images/menu/barkada-bundle-promo.jpg" alt="Zsakers menu">
+              <strong>
+                <h5>Barkada Bundle</h5>
+                <p>Price: <span name="ProductPrice">499</span> Php</p>
+              </strong>
+              <label for="quantity">Qty: </label>
+              <input type="number" id="quantity" name="quantity" value="0" min="0" max="100">
+              <span><span name='TotalProductPrice'> 0 </span>Php</span>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="images/menu/nutella-overdoze.jpg" alt="Zsakers menu">
+              <strong>
+                <h5>Do-Notella</h5>
+                <p>Price: <span name="ProductPrice">299</span> Php</p>
+              </strong>
+              <label for="quantity">Qty: </label>
+              <input type="number" id="quantity" name="quantity" value="0" min="0" max="100">
+              <span><span name='TotalProductPrice'> 0 </span>Php</span>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="images/menu/z-reborn-donuts.jpg" alt="Zsakers menu">
+              <strong>
+                <h5>Z-Donuts Reborn</h5>
+                <p>Price: <span name="ProductPrice">299</span> Php</p>
+              </strong>
+              <label for="quantity">Qty: </label>
+              <input type="number" id="quantity" name="quantity" value="0" min="0" max="100">
+              <span><span name='TotalProductPrice'> 0 </span>Php</span>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="images/menu/z-special-dozen.jpg" alt="Zsakers menu">
+              <strong>
+                <h5>Z-Donuts Special</h5>
+                <p>Price: <span name="ProductPrice">299</span> Php</p>
+              </strong>
+              <label for="quantity">Qty: </label>
+              <input type="number" id="quantity" name="quantity" value="0" min="0" max="100">
+              <span><span name='TotalProductPrice'> 0 </span>Php</span>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="images/menu/z-reborn-donuts.jpg" alt="Zsakers menu">
+              <strong>
+                <h5>Z-CREAMPUFF</h5>
+                <p>Price: <span name="ProductPrice">319</span> Php</p>
+              </strong>
+              <label for="quantity">Qty: </label>
+              <input type="number" id="quantity" name="quantity" value="0" min="0" max="100">
+              <span><span name='TotalProductPrice'> 0 </span>Php</span>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="images/menu/z-reborn-donuts.jpg" alt="Zsakers menu">
+              <strong>
+                <h5>Z-Donuts Signature</h5>
+                <p>Price: <span name="ProductPrice">299</span> Php</p>
+              </strong>
+              <label for="quantity">Qty: </label>
+              <input type="number" id="quantity" name="quantity" value="0" min="0" max="100">
+              <span><span name='TotalProductPrice'> 0 </span>Php</span>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <img src="images/menu/z-reborn-donuts.jpg" alt="Zsakers menu">
+              <strong>
+                <h5>Z-Flozz Series</h5>
+                <p>Price: <span name="ProductPrice">180</span> Php</p>
+              </strong>
+              <label for="quantity">Qty: </label>
+              <input type="number" id="quantity" name="quantity" value="0" min="0" max="100">
+              <span><span name='TotalProductPrice'> 0 </span>Php</span>
+            </div>
+          </div>
+
+        </div>
+        <br><br>
+        <input class="btn btn-success" type="submit" value="Add to Cart">
+         <span>Total: <span name='overallTotal'>0</span> Php </span>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Products that can be found in our Branches</h2>
+      <h5>To buy, please visit one of our branch, or <a href="contact.html">contact</a> a near branch for delivery</h5>
+
+      <img src="images/food-menu.jpg" alt="Zsakers Food Menu" style="width:90%; border: 3px solid black; border-radius: 10px;">
+      <p><i>PS: if you are using mobile, or small screen, please zoom in</i> </p>
+    </section>
+
+
+
+
+    <footer>
+      <div class="containA">
+        <ul>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="about.html">About</a> </li>
+          <li><a href="contact.html">Contacts</a> </li>
+        </ul>
+        <p>© All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+
+  </html>
